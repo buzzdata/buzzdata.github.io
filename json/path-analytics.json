@@ -1,148 +1,254 @@
 {
-    "content": [{
-        "id": 1,
-        "internalTitle": "foo",
-        "title": "foo",
-        "contentTypeId": 1,
-        "readingTime": 100,
-        "estimatedCost": 100,
-        "thumbnail": "https://amp.businessinsider.com/images/569fdd9ac08a80bd448b7138-2732-2049.jpg",
-        "topics": ["Marketing", "Economics"]
+  "content": [
+    {
+      "id": 2,
+      "internalTitle": "Product Review: SC Media Gives AlienVault USM 5 Stars",
+      "title": "Product Review: SC Media Gives AlienVault USM 5 Stars",
+      "contentTypeId": 10,
+      "readingTime": 165,
+      "estimatedCost": 4000,
+      "thumbnail": "https://app.cdn.lookbookhq.com/lbhq-development/178/content_thumbnails/5453/192x144/1024-1.png",
+      "topics": ["Intrusion detection system"]
+    },
+    {
+      "id": 3,
+      "internalTitle": "Customer Review: AlienVault USM Customer Reviews Report",
+      "title": "See What AlienVault Customers Have to Say",
+      "contentTypeId": 1,
+      "readingTime": 952,
+      "estimatedCost": 6500,
+      "thumbnail": "https://app.cdn.lookbookhq.com/production/content-source-previews/24940/1024-01.png",
+      "topics": ["Intrusion detection system", "Computer security"]
+    },
+  ],
+  "contentTypes": [
+    { "id": 1, "contentTypeName": "Article" },
+    { "id": 2, "contentTypeName": "Blog Post" },
+    { "id": 3, "contentTypeName": "Case Study" },
+    { "id": 4, "contentTypeName": "Demo" },
+    { "id": 5, "contentTypeName": "Ebook" },
+    { "id": 6, "contentTypeName": "Guide" },
+    { "id": 7, "contentTypeName": "Infographic" },
+    { "id": 8, "contentTypeName": "Newsletter" },
+    { "id": 9, "contentTypeName": "Pricing" },
+    { "id": 10, "contentTypeName": "Testimonials" },
+    { "id": 11, "contentTypeName": "Video" },
+    { "id": 12, "contentTypeName": "Webinar" },
+    { "id": 13, "contentTypeName": "White Paper" },
+    { "id": 14, "contentTypeName": "Product Review" },
+  ],
+  "tracks": [{
+    "id": 1,
+    "name": "SOC/Incident Response Track",
+    "type": "Target"
+  }, {
+    "id": 2,
+    "name": "Threat Intel Track",
+    "type": "Target"
+  }, {
+    "id": 3,
+    "name": "Threat Detection Track",
+    "type": "Target"
+  }, {
+    "id": 4,
+    "name": "Cloud Security Track",
+    "type": "Target"
+  }, {
+    "id": 5,
+    "name": "Ransomware Track",
+    "type": "Target"
+  }],
+  "accounts": [
+     {
+        "id":1,
+        "name":"CA, Inc.",
+        "emailDomain": "ca.com",
+        "industry": "Computer Software",
+        "closed":false,
+        "value":300000
+     },
+     {
+        "id":2,
+        "name":"IBM Corporation",
+        "emailDomain": "ibm.com",
+        "industry": "Computer Manufacturing",
+        "closed":false,
+        "value":100000
+     },
+     {
+        "id":3,
+        "name":"Microsoft Corporation",
+        "emailDomain": "microsoft.com",
+        "industry": "Computer Software",
+        "closed":false,
+        "value":100000
+     },
+     {
+        "id":4,
+        "name":"Salesforce",
+        "emailDomain": "salesforce.com",
+        "industry": "Computer Software",
+        "closed":true,
+        "value":60000
+     },
+     {
+        "id":5,
+        "name":"Automatic Data Processing Inc",
+        "emailDomain": "adp.com",
+        "industry": "EDP Services",
+        "closed":true,
+        "value":145000
+     },
+     {
+        "id":6,
+        "name":"Thomson Reuters",
+        "emailDomain": "thomsonreuters.com",
+        "industry": "Publishing",
+        "closed":false,
+        "value":175000
+     },
+     {
+        "id":7,
+        "name":"Deluxe Corporation",
+        "emailDomain": "deluxe.com",
+        "industry": "Publishing",
+        "closed":false,
+        "value":145000
+     },
+     {
+        "id":8,
+        "name":"Dell Technologies Inc.",
+        "emailDomain": "dell.com",
+        "industry": "Computer Manufacturing",
+        "closed":true,
+        "value":235000
+     },
+     {
+        "id":9,
+        "name":"Hewlett-Packard Enterprise Company",
+        "emailDomain": "hp.com",
+        "industry": "Computer Manufacturing",
+        "closed":false,
+        "value":200000
+     },
+     {
+        "id":10,
+        "name":"National Instruments Corporation",
+        "emailDomain": "nationalinstruments.com",
+        "industry": "Computer Software",
+        "closed":false,
+        "value":175000
+     },
+     {
+        "id":11,
+        "name":"Oracle Corporation",
+        "emailDomain": "oracle.com",
+        "industry": "Computer Software",
+        "closed":true,
+        "value":100000
+     },
+     {
+        "id":12,
+        "name":"Cisco Systems, Inc.",
+        "emailDomain": "cisco.com",
+        "industry": "Computer Manufacturing",
+        "closed":true,
+        "value":100000
+     }
+  ],
+  "visitors": [{
+      "id": 1,
+      "accountId": 1,
+      "email": "james@catechnologies.com",
+      "title": "CEO",
+      "country": "Canada",
+      "industry": "Telecommunications",
+      "behaviourType": "Explorer"
+  }, {
+      "id": 2,
+      "accountId": 2,
+      "email": "tracy@adobe.com",
+      "title": "Marketing Specialist",
+      "country": "Canada",
+      "industry": "Telecommunications",
+      "behaviourType": "Explorer"
+  }, {
+      "id": 3,
+      "accountId": 3,
+      "email": "arnold@cisco.com",
+      "title": "Marketing Strategist",
+      "country": "Canada",
+      "industry": "Telecommunications",
+      "behaviourType": "Explorer"
+  }, {
+      "id": 4,
+      "email": "jvt@pathfactory.com",
+      "title": "Demand Generation Marketer",
+      "country": "Canada",
+      "industry": "Telecommunications",
+      "behaviourType": "Explorer"
+  }, {
+      "id": 5,
+      "accountId": 2,
+      "email": "jason@adobe.com",
+      "title": "SEO Marketer",
+      "country": "Canada",
+      "industry": "Telecommunications",
+      "behaviourType": "Explorer"
+  }, {
+      "id": 6,
+      "vid": "1234-1234-1234-1234",
+      "country": "Canada"
+  }, {
+      "id": 7,
+      "accountId": 1,
+      "email": "jane@catechnologies.com",
+      "title": "COO",
+      "country": "Canada",
+      "industry": "Telecommunications",
+      "behaviourType": "Explorer"
+  }],
+  "sessions": [{
+      "id": 1,
+      "visitorId": 1,
+      "trackId": 1,
+      "startTime": "2018-04-28T10:01:55Z",
+      "views": [{
+          "contentId": 1,
+          "duration": 200,
+          "engagedIntent": 3
+      }, {
+          "contentId": 2,
+          "duration": 30,
+          "engagedIntent": 2
+      }]
+  }, {
+    "id": 2,
+    "visitorId": 7,
+    "trackId": 1,
+    "startTime": "2018-04-27T10:01:55Z",
+    "views": [{
+        "contentId": 1,
+        "duration": 100,
+        "engagedIntent": 3
     }, {
-        "id": 2,
-        "internalTitle": "bar",
-        "title": "bar",
-        "contentTypeId": 2,
-        "readingTime": 100,
-        "estimatedCost": 100,
-        "thumbnail": "https://amp.businessinsider.com/images/569fdd9ac08a80bd448b7138-2732-2049.jpg",
-        "topics": ["Marketing", "Business"]
-    }],
-    "contentTypes": [{
-        "id": 1,
-        "contentTypeName": "foo content type"
-    }, {
-        "id": 2,
-        "contentTypeName": "bar content type"
-    }],
-    "accounts": [{
-        "id": 1,
-        "name": "CA Technologies",
-        "closed": false,
-        "value": 10000
-    }, {
-        "id": 2,
-        "name": "Adobe",
-        "closed": true,
-        "value": 10000
-    }, {
-        "id": 3,
-        "name": "Cisco",
-        "closed": false,
-        "value": 30000
-    }],
-    "visitors": [{
-        "id": 1,
-        "accountId": 1,
-        "email": "james@catechnologies.com",
-        "title": "CEO",
-        "country": "Canada",
-        "industry": "Telecommunications",
-        "behaviourType": "Explorer"
-    }, {
-        "id": 2,
-        "accountId": 2,
-        "email": "tracy@adobe.com",
-        "title": "Marketing Specialist",
-        "country": "Canada",
-        "industry": "Telecommunications",
-        "behaviourType": "Explorer"
-    }, {
-        "id": 3,
-        "accountId": 3,
-        "email": "arnold@cisco.com",
-        "title": "Marketing Strategist",
-        "country": "Canada",
-        "industry": "Telecommunications",
-        "behaviourType": "Explorer"
-    }, {
-        "id": 4,
-        "email": "jvt@pathfactory.com",
-        "title": "Demand Generation Marketer",
-        "country": "Canada",
-        "industry": "Telecommunications",
-        "behaviourType": "Explorer"
-    }, {
-        "id": 5,
-        "accountId": 2,
-        "email": "jason@adobe.com",
-        "title": "SEO Marketer",
-        "country": "Canada",
-        "industry": "Telecommunications",
-        "behaviourType": "Explorer"
-    }, {
-        "id": 6,
-        "vid": "1234-1234-1234-1234",
-        "country": "Canada"
-    }, {
-        "id": 7,
-        "accountId": 1,
-        "email": "jane@catechnologies.com",
-        "title": "COO",
-        "country": "Canada",
-        "industry": "Telecommunications",
-        "behaviourType": "Explorer"
-    }],
-    "tracks": [{
-        "id": 1,
-        "name": "Nurture Now",
-        "type": "Recommend"
-    }, {
-        "id": 2,
-        "name": "Advanced Prospect",
-        "type": "Target"
-    }],
-    "sessions": [{
-        "id": 1,
-        "visitorId": 1,
-        "trackId": 1,
-        "startTime": "2018-04-28T10:01:55Z",
-        "views": [{
-            "contentId": 1,
-            "duration": 200,
-            "engagedIntent": 3
-        }, {
-            "contentId": 2,
-            "duration": 30,
-            "engagedIntent": 2
-        }]
-    }, {
-        "id": 2,
-        "visitorId": 7,
-        "trackId": 1,
-        "startTime": "2018-04-27T10:01:55Z",
-        "views": [{
-            "contentId": 1,
-            "duration": 100,
-            "engagedIntent": 3
-        }, {
-            "contentId": 2,
-            "duration": 50,
-            "engagedIntent": 2
-        }]
-    }, {
-        "id": 3,
-        "visitorId": 2,
-        "trackId": 1,
-        "startTime": "2018-04-18T10:01:55Z",
-        "views": [{
-            "contentId": 1,
-            "duration": 100,
-            "engagedIntent": 3
-        }, {
-            "contentId": 2,
-            "duration": 50,
-            "engagedIntent": 2
-        }]
+        "contentId": 2,
+        "duration": 50,
+        "engagedIntent": 2
     }]
+  }, {
+    "id": 3,
+    "visitorId": 2,
+    "trackId": 1,
+    "startTime": "2018-04-18T10:01:55Z",
+    "views": [{
+        "contentId": 1,
+        "duration": 100,
+        "engagedIntent": 3
+    }, {
+        "contentId": 2,
+        "duration": 50,
+        "engagedIntent": 2
+    }]
+  }]
 }
