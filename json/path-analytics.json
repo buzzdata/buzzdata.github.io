@@ -19,7 +19,7 @@
       "estimatedCost": 6500,
       "thumbnail": "https://app.cdn.lookbookhq.com/production/content-source-previews/24940/1024-01.png",
       "topics": ["Intrusion detection system", "Computer security"]
-    },
+    }
   ],
   "contentTypes": [
     { "id": 1, "contentTypeName": "Article" },
@@ -35,7 +35,7 @@
     { "id": 11, "contentTypeName": "Video" },
     { "id": 12, "contentTypeName": "Webinar" },
     { "id": 13, "contentTypeName": "White Paper" },
-    { "id": 14, "contentTypeName": "Product Review" },
+    { "id": 14, "contentTypeName": "Product Review" }
   ],
   "tracks": [{
     "id": 1,
