@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
+<site>
+<page file="index.html" text="Professional Design Visualization Solutions | NVIDIA Quadro" title="Professional Design Visualization Solutions | NVIDIA Quadro">
+<page file="default.html" text="QUADRO vDWS" title="Virtual Data Center Workstations (vDWS) | NVIDIA Quadro"/>
+<page file="default_001.html" text="GRID vPC/vAPPS" title="Virtual PC and Virtual Applications | NVIDIA GRID"/>
+<page file="default_002.html" text="Virtualization" title="Virtual GPU &amp; VDI Solutions | NVIDIA"/>
+</page>
+</site>
