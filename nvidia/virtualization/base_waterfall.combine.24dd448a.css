@@ -1,0 +1,208 @@
+/* Code tidied up by ScrapBook */
+@import url("css.css");
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video { margin: 0px; padding: 0px; border: 0px none; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: outside none none; }
+blockquote, q { quotes: none; }
+blockquote::after, blockquote::before, q::after, q::before { content: none; }
+table { border-collapse: collapse; border-spacing: 0px; }
+.clearfix::after, .clearfix::before, .tile-belt::after, .tile-belt::before, .tile-interactions::after, .tile-interactions::before, .tile-sharing-expanded::after, .tile-sharing-expanded::before { content: "."; display: block; height: 0px; overflow: hidden; }
+.clearfix::after, .tile-belt::after, .tile-interactions::after, .tile-sharing-expanded::after { clear: both; }
+.clearfix, .tile-belt, .tile-interactions, .tile-sharing-expanded {  }
+@font-face {
+  font-family: "stackla-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("stackla-icons20140417.eot") format("embedded-opentype"), url("stackla-icons20140417.woff") format("woff"), url("stackla-icons20140417.ttf") format("truetype"), url("stackla-icons20140417.svg") format("svg");
+}
+[class*=" stackla-icon-"], [class^="stackla-icon-"] { font-family: stackla-icons; font-style: normal; font-weight: 400; font-variant: normal; text-transform: none; line-height: 1; -moz-osx-font-smoothing: grayscale; }
+.stackla-icon-tick::before { content: ""; }
+.stackla-icon-pause::before { content: ""; }
+.stackla-icon-tag::before { content: ""; }
+.stackla-icon-product::before { content: ""; }
+.stackla-icon-share::before { content: ""; }
+.stackla-icon-close::before { content: ""; }
+.stackla-icon-list::before { content: ""; }
+.stackla-icon-vote::before { content: ""; }
+.stackla-icon-time::before { content: ""; }
+.stackla-icon-reply::before { content: ""; }
+.stackla-icon-location::before { content: ""; }
+.stackla-icon-like::before { content: ""; }
+.stackla-icon-dislike::before { content: ""; }
+.stackla-icon-comment::before { content: ""; }
+body { color: rgb(102, 102, 102); font-family: Lato,sans-serif; font-size: 13px; font-weight: 300; line-height: 1.4; margin: 0px; padding: 0px; width: 100%; }
+a:link, a:visited { color: rgb(25, 153, 204); text-decoration: none; }
+strong { font-weight: 700; }
+.clearfix::after, .tile-belt::after, .tile-interactions::after, .tile-sharing-expanded::after { clear: both; }
+.clearfix, .tile-belt, .tile-interactions, .tile-sharing-expanded {  }
+.clearfix::after, .tile-belt::after, .tile-interactions::after, .tile-sharing-expanded::after { clear: both; content: ""; display: block; overflow: hidden; }
+.hidden { display: none; }
+.isotope-item.isotope-hidden { pointer-events: none; }
+.track { position: relative; overflow: hidden; }
+.container { margin-top: -1px; margin-right: -1px; position: relative; }
+.spinner { position: absolute; width: 50px; height: 50px; top: 50%; left: 50%; margin: -12px 0px 0px -12px; background: transparent url("loading.gif") no-repeat scroll 0% 0%; z-index: 100; }
+.spinner-overlay { position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.5; z-index: 99; display: none; }
+.ups { display: block; width: 15px; height: 15px; background: transparent url("likes-small.png") no-repeat scroll 0% 0%; }
+.comments { display: block; width: 15px; height: 15px; margin: 0px; background: transparent url("comments-small.png") no-repeat scroll 0% 0%; }
+.contains-tag-frameless .tile-interactions, .contains-tag-frameless .tile-timestamp, .contains-tag-frameless .tile-user-info { display: none; }
+.contains-tag-frameless .tile-content { margin: 0px; }
+.contains-tag-frameless .tile-html { padding: 0px; margin: 0px; height: 100%; max-height: none; }
+.col1 .ups { background-position: -15px -18px; }
+.col1 .ups:hover { background-position: 0px -19px; }
+.col1 .comments { background-position: -14px -14px; }
+.col1 .comments:hover { background-position: 2px -13px; }
+.col2 .ups { background-position: -15px 0px; }
+.col2 .ups:hover { background-position: 0px 0px; }
+.col2 .comments { background-position: -15px 2px; }
+.col2 .comments:hover { background-position: 0px 2px; }
+.icon-comment-alt, .icon-thumbs-down, .icon-thumbs-up, .time-phrase { padding-right: 5px; }
+.button { background: rgb(0, 0, 0) none repeat scroll 0% 0%; box-sizing: border-box; color: rgb(255, 255, 255); cursor: pointer; display: block; font-size: 24px; padding: 20px; text-align: center; }
+.button:link, .button:visited { color: rgb(255, 255, 255); }
+.button:hover { background: rgb(51, 51, 51) none repeat scroll 0% 0%; text-decoration: none; }
+.button:active { background: rgb(68, 68, 68) none repeat scroll 0% 0%; }
+.js-scroll-loading { position: absolute; left: 0px; right: 0px; bottom: -100px; margin: 0px auto; z-index: 10000; }
+.tile-interactions { position: relative; }
+.tile-interaction-comment, .tile-interaction-dislike, .tile-interaction-like, .tile-interaction-share, .tile-interaction-vote { float: left; margin-right: 4px; }
+.tile-interaction-link { border: 2px solid transparent; border-radius: 50%; display: inline-block; font-size: 18px; padding: 5px 9px; }
+.tile-interaction-link .fs { vertical-align: baseline; text-align: center; }
+.tile-interaction-link:first-child { margin-left: 0px; }
+.tile-interaction-count { display: inline-block; font-weight: 700; vertical-align: baseline; }
+.tile-interaction-like { color: rgb(162, 198, 132); }
+.tile-interaction-like .tile-interaction-link:hover { border-color: rgb(182, 216, 153); }
+.tile-interaction-dislike { color: rgb(255, 120, 101); }
+.tile-interaction-dislike .tile-interaction-link:hover { border-color: rgb(255, 193, 185); }
+.tile-interaction-vote { color: rgb(29, 151, 217); }
+.tile-interaction-vote .tile-interaction-link:hover { border-color: rgb(151, 203, 226); }
+.tile-interaction-share .tile-interaction-link:hover { border-color: rgb(185, 185, 185); }
+.tile-interaction-comment { float: right; }
+.tile-interaction-comment .tile-interaction-link:hover { border-color: rgb(174, 174, 174); }
+.tile-sharing-expanded { background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(207, 207, 207); box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); display: none; position: absolute; text-align: center; left: 0px; right: 0px; top: -5px; }
+.tile-sharing-expanded li { display: inline-block; float: left; margin: 3px 0px 0px 3px; }
+.tile-sharing-expanded li:last-child { float: right; }
+.tile-share-button { color: rgb(255, 255, 255); display: inline-block; font-size: 18px; padding: 9px 8px 8px; }
+.tile-share-button * { display: block; }
+.tile-share-close { display: inline-block; font-size: 18px; padding: 5px 10px 8px; }
+.tile-sharing-expanded {  }
+.tile-sharing-expanded::after { content: ""; display: block; clear: both; }
+.tile-sharing-expanded .facebook { background: rgb(60, 90, 150) none repeat scroll 0% 0%; }
+.tile-sharing-expanded .twitter { background: rgb(93, 174, 233) none repeat scroll 0% 0%; }
+.tile-sharing-expanded .pinterest { background: rgb(189, 8, 28) none repeat scroll 0% 0%; }
+.tile-sharing-expanded .gplus { background: rgb(221, 75, 57) none repeat scroll 0% 0%; }
+.tile-sharing-expanded .linkedin { background: rgb(0, 119, 181) none repeat scroll 0% 0%; }
+.tile-sharing-expanded .email { background: rgb(102, 102, 102) none repeat scroll 0% 0%; }
+.tile-tags { color: rgb(102, 102, 102); cursor: default; font-size: 13px; white-space: nowrap; }
+.tile-tag { border: 1px solid rgb(224, 224, 224); display: inline-block; margin-bottom: 3px; margin-right: 1px; padding: 4px 8px; text-decoration: none; }
+.tile-tag[href]:hover { text-decoration: underline; }
+.tile-source { font-size: 32px; line-height: 32px; margin-right: 8px; width: 32px; }
+.tile-source-twitter { color: rgb(93, 173, 231); }
+.tile-source-flickr { color: rgb(41, 41, 44); }
+.tile-source-instagram { color: rgb(38, 36, 37); }
+.tile-source-sta_feed { color: rgb(51, 51, 51); }
+.tile-source-gplus { color: rgb(217, 79, 61); }
+.tile-source-rss { color: rgb(251, 118, 41); }
+.tile-source-youtube { color: rgb(200, 36, 35); }
+.tile-source-facebook { color: rgb(57, 86, 146); }
+.tile-source-livestream { color: rgb(207, 32, 46); }
+.tile-source-dailymotion { color: rgb(0, 100, 220); }
+.tile-source-wistia { color: rgb(20, 142, 225); }
+.tile-user-info { display: table; }
+.tile-user-info a { text-decoration: none; }
+.tile-user-info a:link, .tile-user-info a:visited { color: rgb(102, 102, 102); }
+.tile-user-info a:hover { text-decoration: underline; }
+.tile-user-bottom, .tile-user-top { display: block; line-height: 1.2; width: 100%; }
+.tile-user-handle, .tile-user-name { font-weight: 400; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.clearfix, .tile-belt, .tile-interactions, .tile-sharing-expanded {  }
+.clearfix::after, .tile-belt::after, .tile-interactions::after, .tile-sharing-expanded::after { clear: both; content: ""; display: block; }
+.icon { position: absolute; left: 50%; top: 50%; margin-left: -16px; margin-top: -16px; width: 32px; height: 32px; }
+.tile { cursor: pointer; font-weight: 300; position: relative; -moz-osx-font-smoothing: grayscale; }
+.tile .hidden { display: none; }
+.tile.no-click-through, .tile.no-click-through > a { cursor: default; }
+.tile-content { position: relative; overflow: hidden; margin-bottom: 20px; }
+.tile-content > div:last-child { margin-bottom: 0px; }
+.tile-image-wrapper, .tile-video-wrapper { overflow: hidden; position: relative; }
+.tile-image-wrapper, .tile-video-wrapper { margin-bottom: -36px; position: relative; }
+.sta_feed .tile-image-wrapper, .sta_feed .tile-video-wrapper, .stackla .tile-image-wrapper, .stackla .tile-video-wrapper { margin-bottom: 15px; }
+.tile-image, .tile-video-wrapper iframe { display: block; margin: 0px auto; z-index: 1; }
+.tile-image { height: auto; width: 100%; }
+.tile-image-loading, .tile-media-loading { background: rgb(0, 0, 0) none repeat scroll 0% 0%; height: 100%; left: 0px; position: absolute; top: 0px; width: 100%; }
+.tile-image-loading-icon, .tile-media-loading-icon { background: transparent url("image-loader.gif") no-repeat scroll 0% 0%; height: 16px; left: 50%; margin: -8px 0px 0px -8px; position: absolute; top: 50%; width: 16px; }
+.tile-video-icon { background: transparent url("video-icon_001.png") no-repeat scroll 0px 0px; }
+.tile-audio-icon { width: 32px; height: 32px; background-color: rgba(0, 0, 0, 0.5); border-radius: 50%; color: rgb(255, 255, 255); font-size: 18px; text-align: center; line-height: 28px; }
+.tile-avatar-wrapper { display: block; margin: 0px auto; position: relative; text-align: center; width: 100%; }
+.tile-avatar-link { display: inline-block; height: 56px; width: 56px; }
+.tile-avatar-image, .tile-avatar-placeholder { background-color: rgba(255, 255, 255, 0.5); border: 2px solid rgb(255, 255, 255); border-radius: 50%; display: inline-block; height: 52px; vertical-align: middle; width: 52px; }
+.tile-avatar-placeholder { display: inline-block; position: absolute; }
+.tile-avatar-placeholder img { border-radius: 50%; border: medium none; box-sizing: border-box; height: 100%; width: 100%; }
+.facebook .tile-avatar-placeholder { background: rgb(57, 87, 154) none repeat scroll 0% 0%; }
+.twitter .tile-avatar-placeholder { background: rgb(0, 171, 240) none repeat scroll 0% 0%; }
+.gplus .tile-avatar-placeholder { background: rgb(221, 75, 57) none repeat scroll 0% 0%; }
+.instagram .tile-avatar-placeholder { background: rgb(128, 65, 60) none repeat scroll 0% 0%; }
+.sta_feed .tile-avatar-placeholder, .stackla .tile-avatar-placeholder { background: rgb(117, 194, 55) none repeat scroll 0% 0%; }
+.rss .tile-avatar-placeholder { background: rgb(255, 102, 0) none repeat scroll 0% 0%; }
+.weibo .tile-avatar-placeholder { background: rgb(230, 22, 45) none repeat scroll 0% 0%; }
+.youtube .tile-avatar-placeholder { background: rgb(211, 35, 37) none repeat scroll 0% 0%; }
+.pinterest .tile-avatar-placeholder { background: rgb(195, 9, 12) none repeat scroll 0% 0%; }
+.ecal .tile-avatar-placeholder { background: rgb(30, 143, 207) none repeat scroll 0% 0%; }
+.tumblr .tile-avatar-placeholder { background: rgb(69, 85, 107) none repeat scroll 0% 0%; }
+.flickr .tile-avatar-placeholder { background: rgb(237, 30, 131) none repeat scroll 0% 0%; }
+.wordpress .tile-avatar-placeholder { background: rgb(33, 117, 155) none repeat scroll 0% 0%; }
+.tile-belt { margin-bottom: 15px; }
+.tile-title { margin-bottom: 15px; }
+.tile-caption, .tile-html { color: rgb(51, 51, 51); font-weight: 400; margin-bottom: 15px; overflow: hidden; overflow-wrap: break-word; }
+.tile-caption .emoji, .tile-html .emoji { vertical-align: middle; }
+.tile-emoji { margin-right: 2px; vertical-align: middle; width: 13px; }
+.tile-claim { padding-bottom: 8px; text-align: center; }
+.tile-claim-link { font-size: 16px; }
+.tile-claim-link:link, .tile-claim-link:visited { color: rgb(0, 171, 240); font-weight: 400; }
+.tile-claim-link:hover { text-decoration: underline; }
+.claimed .tile-claim-link { color: rgb(204, 204, 204); font-style: italic; }
+.tile-twitter-intent { text-align: center; }
+.tile-twitter-intent + div { border-top: 1px dotted rgb(238, 238, 238); padding-top: 10px; margin-top: 10px; }
+.tile-twitter-intent a { display: inline-block; font-size: 18px; margin-left: 24px; }
+.tile-twitter-intent a:first-child { margin-left: 0px; }
+.tile-twitter-intent a:link, .tile-twitter-intent a:visited { color: rgb(196, 196, 196); }
+.tile-twitter-intent a:hover { color: rgb(0, 171, 240); }
+.tile-twitter-intent a .js-dislike-count, .tile-twitter-intent a .js-like-count { position: absolute; }
+.tile.html { padding: 0px; }
+.tile iframe { display: block; }
+.tile-custom-clickthru { position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; z-index: 1; }
+.tile-official-star { position: absolute; top: 0px; right: 0px; color: rgb(255, 204, 0) ! important; font-size: 18px; }
+.tile-title { font-weight: 700; font-size: 20px; color: rgb(51, 51, 51); max-height: 80px; overflow: hidden; }
+.anonymous .tile-image-wrapper, .anonymous .tile-video-wrapper, .content-only .tile-image-wrapper, .content-only .tile-video-wrapper { margin-top: 0px; }
+.vine-overlay { position: absolute; top: 0px; width: 100%; height: 100%; }
+.vine-embed { width: 100%; }
+.stackla .tile-html { max-height: none; }
+.tile-caption .stackla-icon-reply { color: rgb(153, 153, 153); }
+.tile-html { background: rgb(238, 238, 238) none repeat scroll 0% 0%; padding: 8px; }
+.stackla .tile-html { margin: 0px; padding: 0px; background: transparent none repeat scroll 0px 0px; }
+.ecal-url a, .tile-caption a, .tile-html a { color: rgb(0, 171, 240); }
+.tile-caption a:hover, .tile-html a:hover { text-decoration: underline; }
+.tile-ecal { padding: 0px 8px; }
+.tile-ecal li { position: relative; margin: 0px 20px; padding: 2px 0px; list-style: outside none none; border-top: 1px dotted rgb(204, 204, 204); }
+.tile-ecal li:first-child { border: medium none; }
+.ecal-url { text-align: center; }
+.tile-ecal i { position: absolute; top: 3px; left: -20px; width: 20px; text-align: center; }
+.competition-vote-message { position: absolute; top: 50%; left: 50%; width: 80%; padding: 10px; margin-left: -40%; margin-top: -20%; color: red; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border-radius: 10px; z-index: 999999; font-size: 11px; }
+.competition-vote-message-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999998; background: rgb(0, 0, 0) none repeat scroll 0% 0%; opacity: 0.7; }
+.competition-vote-message-wrapper { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 999997; }
+.tile { border-style: solid; border-color: rgb(229, 229, 229); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-width: 0px 1px 1px 0px; box-sizing: border-box; width: 238px; position: relative; }
+.tile-content { box-sizing: border-box; position: relative; margin: 20px; }
+.tile-image-wrapper, .tile-video-wrapper { margin-top: 0px; margin-bottom: 15px; }
+.tile-image-wrapper ~ .tile-avatar-wrapper, .tile-video-wrapper ~ .tile-avatar-wrapper { margin-top: -46px; }
+.tile-youtube-wrapper { position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 10; background: rgb(0, 0, 0) none repeat scroll 0% 0%; }
+.tile-youtube-wrapper iframe { width: 100%; height: 400px; }
+.tile-youtube-close { margin: 20px auto; text-align: center; color: rgb(204, 204, 204); cursor: pointer; width: 6em; padding: 10px 0px; font-size: 20px; }
+.tile-caption, .tile-html { color: rgb(51, 51, 51); font-size: 24px; font-weight: 400; line-height: 1.2; margin-bottom: 15px; max-height: 250px; overflow-wrap: break-word; }
+.tile-caption .emoji, .tile-html .emoji { vertical-align: middle; }
+.tile-source { float: left; }
+.tile-timestamp { float: right; }
+.tile-interactions { margin-bottom: 15px; }
+.tile-tags { margin-bottom: 15px; white-space: normal; }
+.tile-comments-user-message { font-size: 24px; }
+.tile-shopspot { background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%; border-radius: 50%; line-height: 0; margin-left: -10px; margin-top: -10px; padding: 5px; position: absolute; }
+.tile-shopspot-icon { background: rgb(1, 152, 207) none repeat scroll 0% 0%; border-radius: 50%; height: 20px; width: 20px; }
+.tile-shopspot-icon::before { display: none; }
+.stackla-watermark-tile { background: rgb(64, 64, 64) none repeat scroll 0% 0%; box-sizing: border-box; font-size: 24px; height: 100%; padding: 41% 20%; }
+.stackla-watermark-tile::before { content: ""; vertical-align: middle; display: inline-block; height: 100%; }
+.stackla-watermark-content { background-image: url("powered-by-stackla.svg"); background-size: 100% auto; background-repeat: no-repeat; background-position: center center; color: transparent; display: inline-block; margin: -4% 0px 0px; overflow: hidden; padding: 17% 0px; position: relative; vertical-align: middle; width: 100%; }
+.stackla-watermark-content span { position: absolute; top: -9999em; left: -9999em; display: inline-block; height: 0px; width: 0px; }
