@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #76b900;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Search_copy" data-name="Search copy" class="cls-1" d="M881.493,26.32h-0.821l-0.284-.282a6.652,6.652,0,1,0-.726.73l0.283,0.284v0.812L885.091,33l1.533-1.534Zm-6.177,0a4.631,4.631,0,1,1,4.629-4.631A4.63,4.63,0,0,1,875.316,26.32Z" transform="translate(-868.625 -15)"/>
+</svg>
