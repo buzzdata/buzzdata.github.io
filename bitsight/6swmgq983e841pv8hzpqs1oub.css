@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Proxima Nova'; /*Light*/
+    src: url('1qi8wmj35n5yt3jjze2iqsucr');
+    src: url('4sytg171out32d5csan1t0whl') format('embedded-opentype'),
+         url('1zfh46jjw8y661yvhyh45ywy0w') format('woff'),
+         url('2mfc3jafisqn021mdn58y4a2iv') format('truetype'),
+         url('365yqgoyoj6jb1sv2nzlvlyb0z') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova'; /*Semibold*/
+	src: url('1j5qe1wvt58vhaizjhx2ashw6');
+	src: url('348m7900l00wa255tmidxmptol') format('embedded-opentype'),
+	     url('3osqngjuhcvyglloleklf40vl') format('woff'),
+	     url('1c2moe3rszedh3p746zci2esp5') format('truetype'),
+	     url('3s0ayztaiyj7d34vqzxl698o4v') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';/*Bold*/
+	src: url('3qz3z92dl2wwz26lznwjj8t51l');
+	src: url('27hlprkwgsfiivha4hosshkkh') format('embedded-opentype'),
+	     url('2qju18ffdjala20btwtb3j0s9') format('woff'),
+	     url('2epi8cm8fydh83dqb3ifj6f9sk') format('truetype'),
+	     url('3cllg8k4nhea83l7mrq1cqyruv') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Extra Condensed Regular';
+	src: url('uhsut7i6s46931rhyw1omrat2');
+	src: url('vh60qwanv2px10f56q4ikfdw1') format('embedded-opentype'),
+	     url('1s68qptr9tqwy8sgh4mcxexvb') format('woff'),
+	     url('3ap4rgnwr3oyk1n5475o2np1h8') format('truetype'),
+	     url('9comh3ihnh692g6yvvna57roz') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Condensed Semibold';
+	src: url('2vb8qolz1zo58vrtok2aev490');
+	src: url('dex2j7f536cj2uyvd10ha4vq3') format('embedded-opentype'),
+	     url('24yw17670st583ldmy4ug9ig6t') format('woff'),
+	     url('2dkufsq7jnyh2m0c2kusrlod') format('truetype'),
+	     url('2hpr4b8mpsw2616mf2pdci3txa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Condensed Bold';
+	src: url('38pjkxea4hnogqbhl3yl5s4k1');
+	src: url('228s9z4o2y6ks2h4stx5y4vxk') format('embedded-opentype'),
+	     url('1yvwodfsfwor53bwqlzzh3kcnb') format('woff'),
+	     url('3l8xxocgtgru61fdzvjhii4wte') format('truetype'),
+	     url('33e8ncy0w6zzk2pfcrgvett96i') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova'; /*Light*/
+    src: url('1qi8wmj35n5yt3jjze2iqsucr');
+    src: url('4sytg171out32d5csan1t0whl') format('embedded-opentype'),
+         url('1zfh46jjw8y661yvhyh45ywy0w') format('woff'),
+         url('2mfc3jafisqn021mdn58y4a2iv') format('truetype'),
+	     url('365yqgoyoj6jb1sv2nzlvlyb0z') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova'; /*Semibold*/
+	src: url('1j5qe1wvt58vhaizjhx2ashw6');
+	src: url('348m7900l00wa255tmidxmptol') format('embedded-opentype'),
+	     url('3osqngjuhcvyglloleklf40vl') format('woff'),
+	     url('1c2moe3rszedh3p746zci2esp5') format('truetype'),
+	     url('3s0ayztaiyj7d34vqzxl698o4v') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';/*Bold*/
+	src: url('3qz3z92dl2wwz26lznwjj8t51l');
+	src: url('27hlprkwgsfiivha4hosshkkh') format('embedded-opentype'),
+	     url('2qju18ffdjala20btwtb3j0s9') format('woff'),
+	     url('2epi8cm8fydh83dqb3ifj6f9sk') format('truetype'),
+	     url('3cllg8k4nhea83l7mrq1cqyruv') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Extra Condensed Regular';
+	src: url('uhsut7i6s46931rhyw1omrat2');
+	src: url('vh60qwanv2px10f56q4ikfdw1') format('embedded-opentype'),
+	     url('1s68qptr9tqwy8sgh4mcxexvb') format('woff'),
+	     url('3ap4rgnwr3oyk1n5475o2np1h8') format('truetype'),
+	     url('9comh3ihnh692g6yvvna57roz') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Condensed Semibold';
+	src: url('2vb8qolz1zo58vrtok2aev490');
+	src: url('dex2j7f536cj2uyvd10ha4vq3') format('embedded-opentype'),
+	     url('24yw17670st583ldmy4ug9ig6t') format('woff'),
+	     url('2dkufsq7jnyh2m0c2kusrlod') format('truetype'),
+	     url('2hpr4b8mpsw2616mf2pdci3txa') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Condensed Bold';
+	src: url('38pjkxea4hnogqbhl3yl5s4k1');
+	src: url('228s9z4o2y6ks2h4stx5y4vxk') format('embedded-opentype'),
+	     url('1yvwodfsfwor53bwqlzzh3kcnb') format('woff'),
+	     url('3l8xxocgtgru61fdzvjhii4wte') format('truetype'),
+	     url('33e8ncy0w6zzk2pfcrgvett96i') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:url('1ij9svc4mq2cm3af06h0pmt5ux');
+	src:url('1chtltrlscl0o3cj3q3buu3f37') format('embedded-opentype'),
+		url('138lcwjerzpel2z5159us4ur44') format('woff'),
+		url('24hg9gakn46t72oumxffpm1hac') format('truetype'),
+		url('3oq54os5u2gdcaw341b5vtc4q.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChunkFive';
+    src:url('2gks6odr9549j14jazzt2sg3vm');
+	src:url('2wy7g60ikvhdu2l1nv3aey0tq4') format('embedded-opentype'),
+		url('2u94l2u88kgpgkdnh13mksbmt') format('woff'),
+		url('2e38rfpzw195go8k1546x8n5o') format('truetype'),
+		url('28e93c9k4fhph2ntvlmhwlsnix.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

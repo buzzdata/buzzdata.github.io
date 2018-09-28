@@ -1,0 +1,2 @@
+var bi_ver = '131714781795946750', biSiteUrl = 'https://www.bitsighttech.com', biUtmaPrefix = '191929657', biStartTime=636735677498967244;
+(function () {if (window.biLoaded) return;var bi = document.createElement('script'); bi.type = 'text/javascript'; bi.async = true;bi.src = (typeof vaJsHost != 'undefined' ? vaJsHost + vaJsDomain : biJsUrl.replace(/\/BrightInfoVersion\.aspx/gi, '')) + '/Scripts/bi.js?bi_ver=' + bi_ver;var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(bi, s);})();
